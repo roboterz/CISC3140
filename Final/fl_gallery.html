@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    Final Project
+    
+    Gallery page of Gaming Stop
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+
+    Filename: fl_gallery.html
+   -->
+	<meta charset="utf-8" />
+	<title>Gaming Stop</title>
+	
+	<link href="css/fl_base.css" rel="stylesheet" />
+	<link href="css/fl_gallery.css" rel="stylesheet" />
+
+	<script src="js/fl_gallery.js" async></script>
+</head>
+
+<body>
+	<header class="logo">
+		<a href="fl_index.html"><img src="image/fl_logo_game.png" alt="Gaming Stop" /></a>
+
+		<nav class="horizontal">
+			<ul>
+				<li><a href="fl_index.html">Home</a></li>
+				<li><a href="fl_gallery.html">Gallery</a></li>
+				<li><a href="fl_events.html">Events</a></li>
+				<li><a href="fl_shopping.html">Shopping</a></li>
+				<li><a href="fl_about.html">Contact Us</a></li>
+			<ul>
+		</nav>
+	</header>
+
+	<div class="s_content" style="max-width:1200px">
+		<img class="mySlides" src="image/1.jpg" style="width:100%">
+		<img class="mySlides" src="image/2.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/3.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/4.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/5.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/6.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/7.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/8.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/9.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/10.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/11.jpg" style="width:100%;display:none">
+		<img class="mySlides" src="image/12.jpg" style="width:100%;display:none">
+
+
+		<div class="row-padding section">
+			<div class="col s1">
+				<img class="thumb opacity hover-opacity-off" src="image/1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/7.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(7)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/8.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(8)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/9.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(9)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/10.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(10)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/11.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(11)">
+			</div>
+			<div class="col s1">
+				 <img class="thumb opacity hover-opacity-off" src="image/12.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(12)">
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<input type="hidden" id="currentID" value="1"/>
+	</div>
+	
+	<footer>
+		<address>
+		Gaming Stop &#8226; 7895 decade Street &#8226; Brooklyn, NY 
+		11234 &#8226; 718.489.5689
+		</address>
+	</footer>
+</body>
+</html>
+
+

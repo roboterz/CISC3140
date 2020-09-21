@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*
+   Final Project
+   
+	Base Style Sheet
+	Author: Jiongjun Liu
+	Date:   07/06/2020
+	
+	Filename: fl_base.css
+
+*/
+
+
+/* Basic styles to be used with all devices and under all conditions */
+
+img {
+	display: block;
+	width: 100%;
+}
+
+
+/* Horizontal Navigation Styles */
+body > header > nav.horizontal li {
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	
+}
+
+nav > ul > li > a {
+	display: block;	
+
+}
+
+nav.horizontal a {
+   background-color: #111112;
+   font-size: 1.2em;
+   line-height: 1.6em;
+   text-align: center;
+   text-decoration: none;
+}  
+
+nav.horizontal a:link, 
+nav.horizontal a:visited {
+   color: gray;
+}
+
+nav.horizontal a:hover, 
+nav.horizontal a:active {
+	color: white;
+   background-color: #3f5f9e;
+}   
+
+
+/* body */
+
+html {
+	background-color: #19191a;
+}
+
+body {
+	color: gray;
+	background-color: #19191a;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+
+}
+
+body > section#gameinfo {
+	width: 80%;
+	float: left;
+	margin: 0 0 0 2%;
+}
+
+article.newGames > header >ul {
+	list-style-image: url(../image/check.png);
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+article#about{
+	margin-top: 60px;
+}
+
+h1 {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	margin: 0px;
+}
+
+ h2 {
+	font-size: 1.6em;
+	font-weight: normal;
+	color: #bdbdbd;
+}
+
+body > section > article > aside  {
+	float: right;
+	width: 60%;
+}
+
+body > footer address {
+	background-color: #19191a;
+	color: gray;
+	font: normal small-caps bold 0.9em/3em 
+		  Nobile, Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+
+
+/* Aside Styles */	
+
+aside #sectionTitle{
+	font-size:1.2em;
+	font: bold;
+	color: gray;
+	text-align: center;
+	background-color: #111112;
+}
+
+aside > div  > ul {
+	list-style-type: none;
+	padding-left: 10px;
+	display:block;
+	float:left;
+    clear:both;
+}
+
+aside > div > ul > li > a:visited, aside > div > ul > li > a:link {
+	color: gray;
+	text-decoration:none;
+}
+
+aside > div > ul > li > a:hover, aside > div > ul > li > a:active {
+	color: white;
+	
+}
+
+
+
+/*footer*/
+footer {
+	background-color: #111112;
+	text-align: center;
+	vertical-align: bottom;
+	margin-top: 4%;
+	border-top: 10px outset #111112;
+	clear: both;
+}
+
+
+
+
+ 

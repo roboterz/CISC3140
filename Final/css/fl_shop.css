@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*
+   Final Project
+   
+	shopping Style Sheet
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+	
+	Filename: fl_shop.css
+
+*/
+
+
+
+
+
+
+section#orderSection {
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px;
+   margin: 20px;
+   margin-top: 50px;
+}
+table#cartTable {
+   margin: 15px;
+   width: 95%;
+   border-collapse: collapse;
+}
+
+form#cart fieldset {
+   border: none;
+   margin-left: -10px;
+}
+
+form#cart input[type="text"] {
+   background-color: #121111;
+}
+
+table#cartTable caption {
+   font-size: 1.3em;
+   font-weight: bold;
+   letter-spacing: 0.2em;
+   text-align: left;
+   caption-side: top;
+   margin-bottom: 20px;
+}
+
+
+table#cartTable td {
+   height: 30px;
+   vertical-align: top;
+}
+
+
+form#cart input[type="text"] {
+   color: gray;
+}
+
+form#cart select {
+   display: inline-block;
+   margin-left: 10px;
+   color: gray;
+   background-color: #121111;
+}
+
+
+table#cartTable tr td:last-of-type input {
+   text-align: right;
+   border: none;
+}
+
+table#cartTable tr:nth-of-type(4) {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#cartTable tr:nth-of-type(5) td, table#cartTable tr:nth-of-type(6) td {
+   padding-top: 15px;
+}
+
+table#cartTable tr:nth-of-type(6) td {
+   border-bottom: 6px double rgb(151, 151, 151);
+}
+
+table#cartTable tr:last-of-type td {
+   padding-top: 15px;
+}
+
+table#cartTable td.rightA {
+   text-align: right;
+   padding-right: 10px;
+}
+
+form#cart fieldset label {
+   display: block;
+}
+
+form#cart input#buttonAdd {
+   display: block;
+   width: 120px;
+   height: 35px;
+   margin: 15px auto;
+   background-color: rgba(232, 218, 201, 0.8);
+   font-size: 1.3em;
+   border-radius: 20px;
+}

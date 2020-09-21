@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+   Final Project
+   
+	event Style Sheet
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+	
+	Filename: fl_event.css
+
+*/
+
+
+
+table#eventTable {
+   margin-top: 30px;
+   width: 100%;
+   font-size: 0.75em;
+   border-collapse: separate;
+}
+
+table#eventTable td, table#eventTable th {
+   padding: 5px;
+   vertical-align: top;
+   border: 1px solid gray;
+   width: 14.28%;
+   height: 60px;
+}
+
+table#eventTable caption {
+   font-size: 2em;
+   letter-spacing: 0.03em;
+   margin: 30px 0px 10px;
+   color: gray;
+   
+}
+
+table#eventTable th {
+   background-color: #111112;
+   color: white;
+   font-weight: normal;
+   height: 20px;
+}
+
+
+td#today{
+	background-color: #263a59;
+	color: white;
+}
+
+

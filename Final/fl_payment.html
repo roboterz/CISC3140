@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    Final Project
+    
+    payment page of Gaming Stop
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+
+    Filename: fl_payment.html
+   -->
+	<meta charset="utf-8" />
+	<title>Gaming Stop</title>
+	
+	<link href="css/fl_base.css" rel="stylesheet" />
+	<link href="css/fl_payment.css" rel="stylesheet" />
+
+	<script src="js/fl_payment.js" async></script>
+</head>
+
+<body>
+	<header class="logo">
+		<section>
+			 <div id="showname">
+			 </div>
+		</section>
+		<a href="fl_index.html"><img src="image/fl_logo_game.png" alt="Gaming Stop" /></a>
+
+		<nav class="horizontal">
+			<ul>
+				<li><a href="fl_index.html">Home</a></li>
+				<li><a href="fl_gallery.html">Gallery</a></li>
+				<li><a href="fl_events.html">Events</a></li>
+				<li><a href="fl_shopping.html">Shopping</a></li>
+				<li><a href="fl_about.html">Contact Us</a></li>
+			<ul>
+		</nav>
+	</header>
+
+<section id="paySection">
+      <h1>Payment Form</h1>
+      
+      <form id="order" name="order">       
+        <table id="orderTable">
+           <tr>
+              <td>
+                 <input type="text" name="game1name" id="game1name" readonly  /> 
+                 x
+                 <input type="text" name="game1Qty" id="game1Qty"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="order1Cost" id="order1Cost" size="10"  readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <input type="text" name="game2name" id="game2name" readonly  /> 
+                 x
+                 <input type="text" name="game2Qty" id="game2Qty"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="order2Cost" id="order2Cost" size="10"  readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <input type="text" name="game3name" id="game3name" readonly  /> 
+                 x
+                 <input type="text" name="game3Qty" id="game3Qty"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="order3Cost" id="order3Cost" size="10"  readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <input type="text" name="game4name" id="game4name" readonly  /> 
+                 x
+                 <input type="text" name="game4Qty" id="game4Qty"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="order4Cost" id="order4Cost" size="10"  readonly />
+              </td>
+           </tr>
+           <tr>
+              <td class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subTotal" id="subTotal" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td class="rightA">Tax (8%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly  />
+              </td>
+           </tr>
+        </table>
+      </form>      
+
+      <form id="credit" name="credit" method="post" action="fl_finish.html">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+
+            <label for="cardHolder">Card Holder*</label>
+            <input name="cardHolder" id="cardHolder" required type="text" />              
+
+            <fieldset id="cards">
+               <label class="cardLabel">Credit Company*</label>
+               <label class="cardLabel">
+                  <input name="company" value="amex" type="radio" required />
+                  <img src="image/fl_amex.png" style="width:50%" alt="American Express" />
+               </label>
+               <label class="cardLabel">               
+                  <input name="company" value="discover" type="radio" />
+                  <img src="image/fl_discover.png" style="width:50%" alt="Discover" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="master" type="radio"  />
+                  <img src="image/fl_master.png" style="width:50%" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="visa" type="radio"  />
+                  <img src="image/fl_visa.png" style="width:50%" alt="Visa" />
+               </label>
+            </fieldset>          
+
+            <label for="cardNumber">Credit Card Number*</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+            <label for="expDate">Expiration Date*</label>
+            <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+
+            <label for="cvc">CVC*</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+         </fieldset>
+
+         <p id="footnote">* - Required Item</p>        
+         <input type="submit" id="subButton" value="Submit Payment" />         
+      </form>
+
+   </section>
+	
+	<footer>
+		<address>
+		Gaming Stop &#8226; 7895 decade Street &#8226; Brooklyn, NY 
+		11234 &#8226; 718.489.5689
+		</address>
+	</footer>
+</body>
+</html>
+
+

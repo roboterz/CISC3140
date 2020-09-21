@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    Final Project
+    
+    Shopping page of Gaming Stop
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+
+    Filename: fl_shopping.html
+   -->
+   
+	<meta charset="utf-8" />
+	<title>Gaming Stop</title>
+	
+	<link href="css/fl_base.css" rel="stylesheet" />
+	<link href="css/fl_shop.css" rel="stylesheet" />
+
+	<script src="js/fl_event.js" async></script>
+	<script src="js/fl_shop.js" async></script>
+</head>
+
+<body>
+	<header class="logo">
+		<section>
+		 <form id="memberForm">
+			<label for="username">Member Name</label>
+			<input id="username" name="user" type="text" />
+			<label for="password">Password</label>
+			<input type="password" id="password" name="pwd" />
+			<input type="button" id="login" value="Login" />
+		 </form>
+		 <div id="showname">
+		 </div>
+		</section>
+		
+		<a href="fl_index.html"><img src="image/fl_logo_game.png" alt="Gaming Stop" /></a>
+
+		<nav class="horizontal">
+			<ul>
+				<li><a href="fl_index.html">Home</a></li>
+				<li><a href="fl_gallery.html">Gallery</a></li>
+				<li><a href="fl_events.html">Events</a></li>
+				<li><a href="fl_shopping.html">Shopping</a></li>
+				<li><a href="fl_about.html">Contact Us</a></li>
+			<ul>
+		</nav>
+	</header>
+	
+	
+	<section id="orderSection">
+			<form id="cart" name="cart" action = "fl_payment.html" method="get">
+				
+				<table id="cartTable">
+					<caption>Shopping Cart</caption>
+					<tr>
+						<td>
+							<label>Cyberpunk 2077 ($29.99)<img src="image/item3.jpg" style="width:10%"/></label>
+							<input type="hidden" name="game1price" id="game1price" value="29.99" />
+							<input type="hidden" name="game1name" id="game1name" value="Cyberpunk 2077 ($29.99)" />
+						</td>
+						<td class="rightA">
+							<label for="game1Qty">Qty</label>
+							<select name="game1Qty" id="game1Qty">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+					  <td>
+						 <input type="text" name="order1Cost" id="order1Cost" size="10" readonly />
+					  </td>
+					</tr>
+					<tr>
+						<td>
+							<label>Call of Duty War Zone ($39.99)<img src="image/item4.jpg" style="width:10%"/></label>
+							<input type="hidden" name="game2price" id="game2price" value="39.99" />
+							<input type="hidden" name="game2name" id="game2name" value="Call of Duty War Zone ($39.99)" />
+						</td>
+						<td class="rightA">
+							<label for="game2Qty">Qty</label>
+							<select name="game2Qty" id="game2Qty">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+					  <td>
+						 <input type="text" name="order2Cost" id="order2Cost" size="10" readonly />
+					  </td>
+					</tr>
+					<tr>
+						<td>
+							
+							<label>Iron Man V ($29.99)<img src="image/item1.png" style="width:10%"/></label>
+							
+							<input type="hidden" name="game3price" id="game3price" value="29.99" />
+							<input type="hidden" name="game3name" id="game3name" value="CRiron Man V ($29.99)" />
+						</td>
+						<td class="rightA">
+							<label for="game3Qty">Qty</label>
+							<select name="game3Qty" id="game3Qty">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+					  <td>
+						 <input type="text" name="order3Cost" id="order3Cost" size="10" readonly />
+					  </td>
+					</tr>
+					<tr>
+						<td>
+							<label>The Last of Us Part II($25.99)<img src="image/item2.jpg" style="width:10%"/></label>
+							<input type="hidden" name="game4price" id="game4price" value="29.99" />
+							<input type="hidden" name="game4name" id="game4name" value="The Last of Us Part II($25.99)" />
+						</td>
+						<td class="rightA">
+							<label for="game4Qty">Qty</label>
+							<select name="game4Qty" id="game4Qty">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+					  <td>
+						 <input type="text" name="order4Cost" id="order4Cost" size="10" readonly />
+					  </td>
+					</tr>
+					<td colspan="2" class="rightA">Subtotal</td>
+					  <td class="outcell">
+						 <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+					  </td>
+				   </tr>
+				   <tr>
+					  <td colspan="2" class="rightA">Tax (8%)</td>
+					  <td>
+						 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+					  </td>
+				   </tr>
+
+				   <tr>
+					  <td colspan="2" class="rightA">TOTAL</td>
+					  <td>
+						 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+					 </td>
+				   </tr>
+				</table>
+				<input type="submit" id="buttonAdd" value="Checkout" />
+			</form>
+	</section>
+	
+	
+	<footer>
+		<address>
+		Gaming Stop &#8226; 7895 decade Street &#8226; Brooklyn, NY 
+		11234 &#8226; 718.489.5689
+		</address>
+	</footer>
+</body>
+</html>
+
+

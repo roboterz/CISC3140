@@ -1,0 +1,213 @@
+
+@charset "utf-8";
+
+/*
+   Final Project
+   
+	Payment Style Sheet
+    Author: Jiongjun Liu
+    Date:   07/06/2020
+	
+	Filename: fl_payment.css
+
+*/
+
+
+
+
+/* Order Table Styles */
+
+table#orderTable {
+   margin: 30px 0px 0px 45px;
+   width: 65%;
+   border-collapse: collapse;
+   color: gray;
+}
+
+
+form#order input {
+   background-color: transparent;
+   border: none;
+   color: gray;
+}
+
+
+
+table#orderTable td {
+   height: 20px;
+   vertical-align: top;
+}
+
+
+form#order input#gamelQty, #game2Qty, #game3Qty, #game4Qty {
+   width: 3em;
+}
+
+form#order input#game1name, #game2name, #game3name, #game4name {
+   width: 20em;
+}
+
+form#order input {
+   color: gray;
+}
+
+
+table#orderTable tr td:last-of-type input {
+   text-align: right;
+   border: none;
+}
+
+table#orderTable tr:nth-of-type(4) {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#orderTable tr:nth-of-type(5) td, table#orderTable tr:nth-of-type(6) td {
+   padding-top: 15px;
+}
+
+table#orderTable tr:nth-of-type(6) td {
+   border-bottom: 4px double rgb(151, 151, 151);
+}
+
+table#orderTable tr:last-of-type td {
+   padding-top: 15px;
+}
+
+table#orderTable td.rightA {
+   text-align: right;
+   padding-right: 10px;
+}
+
+
+
+/* Credit Form Styles */
+
+section#paySection {
+   -webkit-flex: 1 1 400px;
+   flex: 1 1 400px;
+   min-height: 300px;
+}
+
+section#paySection form#credit fieldset#cards {
+   display: block;
+   clear: left;
+}
+
+section#paySection p#footnote {
+   font-size: 1em;
+   text-align: center;
+   margin: 0px 10px 20px 140px;
+}
+
+section#paySection h1 {
+   text-align: center;
+   font-size: 2em;
+   letter-spacing: 0.15em;
+   margin: 20px 0px;
+   font-weight: normal;
+   color: gray;
+}
+
+form#credit fieldset {
+   border: none;
+}
+
+
+form#credit fieldset#cards label:first-of-type {
+   text-align: right;
+   margin-left: 50px;
+}
+
+form#credit legend {
+   font-size: 1.3em;
+   padding: 8px;
+   width: 80%;
+   text-align: left;
+   margin-left: 50px;
+   margin-bottom: 20px;
+   color: gray;
+}
+
+
+/* Input and Label Styles */
+
+form#credit label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   margin-bottom: 20px;
+   margin-right: 10px;
+   width: 240px;
+   text-align: right;
+   color: gray;
+}
+
+
+form#credit input {
+   display: block;
+   float: left;
+   
+}
+
+/* Radio Button Styles */
+
+form#credit label.cardLabel {
+   display: inline-block;
+   float: none;
+   width: auto;
+}
+
+form#credit fieldset#cards img {
+   display: inline-block;
+   margin-left: 0px;
+   
+}
+
+
+form#credit input[type='radio'] {
+   display: inline-block;
+   width: auto;
+   float: none;
+   clear: none;
+}
+
+form#credit fieldset#cards {
+   text-align: left;
+   margin-left: 50px;
+   
+}
+
+form#credit input#cvc {
+   width: 3em;
+}
+
+form#credit input#expDate {
+   width: 5em;
+}
+
+form#credit input#subButton {
+   display: block;
+   width: 180px;
+   height: 35px;
+   margin: 15px 0px 10px 200px;
+   background-color: rgba(232, 218, 201, 0.8);
+   font-size: 1.3em;
+   border-radius: 20px;
+   float: none;
+   color: black;
+}
+
+/* Valid and Invalid Styles */
+
+input:invalid, input:focus:invalid {
+   outline: none;
+   background-color: #121111;
+   color: red;
+ }
+
+input:valid, input:focus:valid {
+   outline: none;
+   background-color: #2d2f30;
+   color: #bfc4c7;
+}
